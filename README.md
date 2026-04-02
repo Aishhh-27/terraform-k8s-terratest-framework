@@ -91,6 +91,10 @@ go test ./tests -v
 --- PASS: TestTerraformAndK8s
 PASS
 
+## Test Execution Proof
+
+![Terratest Output](screenshots/test-pass.png)
+
 **Technologies Used**
 
 Go
