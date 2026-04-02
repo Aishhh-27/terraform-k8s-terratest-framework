@@ -18,6 +18,7 @@ The testing suite provisions Kubernetes resources using Terraform, validates the
 
 ## Project Structure
 
+
 infra-testing-suite-terratest/
 ├── terraform/
 │ ├── main.tf
@@ -74,18 +75,24 @@ go test ./tests -v
 PASS
 
 **Technologies Used**
+
 Go
+
 Terratest
+
 Terraform
+
 Kubernetes (client-go)
 
 **Use Cases**
+
 Validating infrastructure changes before deployment
 Testing Terraform modules in CI/CD pipelines
 Preventing configuration drift in Kubernetes environments
 Building reliable infrastructure automation workflows
 
 **Notes**
+
 The test uses a local kubeconfig file for cluster access
 Ensure your Kubernetes cluster is running before executing tests
 Terraform state is managed locally for simplicity
@@ -96,4 +103,5 @@ Additional validation for deployments and services
 Parameterized tests for reusable infrastructure modules
 
 **Author**
+
 Aishwarya Ganesh
