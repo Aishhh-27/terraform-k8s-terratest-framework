@@ -105,12 +105,11 @@ Terraform
 
 Kubernetes (client-go)
 
-**Use Cases**
+## Real-World Use Case
 
-Validating infrastructure changes before deployment
-Testing Terraform modules in CI/CD pipelines
-Preventing configuration drift in Kubernetes environments
-Building reliable infrastructure automation workflows
+In large-scale environments like GitLab Dedicated, infrastructure changes must be validated before deployment across multiple tenant environments.
+
+This project demonstrates how infrastructure testing can be automated using Go and Terratest to ensure reliability, prevent regressions, and enable safe deployments at scale.
 
 **Notes**
 
