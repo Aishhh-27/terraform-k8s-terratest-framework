@@ -53,6 +53,7 @@ This approach ensures that infrastructure changes are validated in a controlled 
 Clone the repository:
 
 git clone https://github.com/Aishhh-27/infra-testing-suite-terratest.git
+
 cd infra-testing-suite-terratest
 
 
