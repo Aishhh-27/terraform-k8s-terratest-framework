@@ -8,6 +8,13 @@ Modern infrastructure workflows require validation to prevent configuration drif
 
 The testing suite provisions Kubernetes resources using Terraform, validates them through the Kubernetes API, and then safely cleans up the environment.
 
+## Why This Project Matters
+
+Infrastructure failures often originate from untested changes.  
+This project demonstrates how infrastructure can be validated before deployment, reducing production risk and improving system reliability.
+
+It reflects real-world SRE practices where infrastructure is treated as testable, versioned code.
+
 ## Key Features
 
 - Infrastructure provisioning using Terraform
@@ -15,6 +22,16 @@ The testing suite provisions Kubernetes resources using Terraform, validates the
 - Kubernetes resource verification using client-go
 - End-to-end lifecycle testing (provision → validate → destroy)
 - Idempotent and repeatable test execution
+
+## Architecture Flow
+
+Terraform → Provisions Kubernetes namespace  
+↓  
+Terratest (Go) → Executes infrastructure lifecycle  
+↓  
+Kubernetes API → Validates resource existence  
+↓  
+Terraform → Cleans up resources
 
 ## Project Structure
 
